@@ -6,20 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>isaac</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./glider.js" defer></script>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
   <header class="header">
     <img src="./assets/logo.svg" alt="logo isaac">
     <div class="header_middle-div">
-      <a class="header_links" href="">Experiência</a>
-      <a class="header_links" href="">Formação</a>
+      <a class="header_links" href="#experience">Experiência</a>
+      <a class="header_links" href="#qualification">Formação</a>
     </div>
-    <a class="header_links" href="">Contato</a>
+    <a class="header_links" href="#contact">Contato</a>
   </header>
 
   <main class="main">
@@ -29,25 +32,37 @@
     <p class="main_phrase">📍 Localizado em Salvador</p>
   </main>
 
-  <section class="experience">
-    <div class="experience_title">
-      <h1>Experiência</h1>
+  <section class="experience" id="experience">
+    <div class="experience_left-section">
+      <div class="experience_title">
+        <h1>Experiência</h1>
+      </div>
+      <div class="experience_text">
+        <p>Desenvolvo projetos para a web utilizando HTML, CSS, SASS, Javascript e React no Front End. NodeJS, PostgreSQL e Express para o Back End. </p>
+      </div>
     </div>
-    <div class="experince_text">
-      <p>Desenvolvo projetos para a web utilizando HTML, CSS, SASS, Javascript e React no Front End. NodeJS, PostgreSQL e Express para o Back End. </p>
+    <div class="experience_carousel">
+      <div class="glider glider_slide">
+        <div class="glider_slide glider_container">
+          <a><img src="./assets/Spaceletter.png" alt="projeto empuxo"></a>
+          <p class="glider_container-title">Empuxo</p>
+          <p>HTML, CSS, React, NodeJS</p>
+        </div>
+        <div class="glider_slide glider_container">
+          <img src="./assets/Spaceletter.png" alt="projeto empuxo">
+          <p class="glider_container-title">Empuxo</p>
+          <p>HTML, CSS, React, NodeJS</p>
+        </div>
+        <div class="glider_slide glider_container">
+          <img src="./assets/Spaceletter.png" alt="projeto empuxo">
+          <p class="glider_container-title">Empuxo</p>
+          <p>HTML, CSS, React, NodeJS</p>
+        </div>
+      </div>
     </div>
-    <img src="https://i.imgur.com/0OP4gl1.png" alt="projeto empuxo">
-    <p>Empuxo</p>
-    <p>HTML, CSS, React, NodeJS</p>
-    <img src="https://i.imgur.com/0OP4gl1.png" alt="projeto empuxo">
-    <p>Empuxo</p>
-    <p>HTML, CSS, React, NodeJS</p>
-    <img src="https://i.imgur.com/0OP4gl1.png" alt="projeto empuxo">
-    <p>Empuxo</p>
-    <p>HTML, CSS, React, NodeJS</p>
   </section>
 
-  <section>
+  <section id="qualification">
     <h1>Formação</h1>
     <hr>
     <p>Recentemente concluí o curso de Desenvolvimento de Software na Cubos Academy, e estou estudando sobre TypeScript e Docker.</p>
@@ -72,7 +87,7 @@
     </div>
   </section>
 
-  <footer>
+  <footer id="contact">
     <div>
       <p>Estou disponível para novos projetos. Caso queira marcar uma conversa, pode entrar em contato comigo! 👋🏽</p>
     </div>

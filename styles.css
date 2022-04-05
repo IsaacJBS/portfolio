@@ -1,7 +1,4 @@
 html{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
   font-size: 62.5%;
 }
 
@@ -12,6 +9,7 @@ a{
 
 :root{
   --background-color: #E5E5E5;
+  --second-background-color: #D8C9AA;
   --main-text-color: #19535F;
   --alternative-color: #7C2D26;
 }
@@ -21,6 +19,14 @@ body{
   font-family: 'Fira Sans', sans-serif;
 
   color: var(--main-text-color);
+
+  font-size: 2.4rem;
+
+  padding: 0;
+  border: 0;
+  margin: 0;
+
+  box-sizing: border-box;
 }
 
 .header {
@@ -29,6 +35,8 @@ body{
   align-items: center;
 
   margin: 4.3rem 13.5rem;
+
+  flex-wrap: wrap;
 }
 
 .header_middle-div a{
@@ -69,4 +77,67 @@ body{
 
 .main_phrase{
   font-size: 2.4rem;
+
+  margin-bottom: 14rem;
 }
+
+.experience{
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--second-background-color);
+
+  padding: 8.8rem 14rem;
+}
+
+.experience_title::after{
+  content: "";
+  display: block;
+  width: 14rem;
+  height: 0.5rem;
+  background: var(--alternative-color);
+  margin: 0.8rem auto;
+}
+
+.experience_left-section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience_text{
+  max-width: 56rem;
+
+  text-align: center;
+}
+
+.experience_carousel{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.glider_slide img{
+  max-width: 100%;
+} 
+
+.glider_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 40rem;
+  margin-right: 12rem;
+
+  background-color: var(--background-color);
+
+  border-radius: 1rem;
+}
+
+.glider_container-title{
+  color: var(--alternative-color);
+
+
+  font-weight: 700;
+} 
