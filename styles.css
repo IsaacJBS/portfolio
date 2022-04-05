@@ -6,18 +6,21 @@ html{
 }
 
 a{
-  text-decoration: none;
+  all: unset;
+  cursor: pointer;
 }
 
 :root{
   --background-color: #E5E5E5;
   --main-text-color: #19535F;
-
+  --alternative-color: #7C2D26;
 }
 
 body{
   background-color: var(--background-color);
   font-family: 'Fira Sans', sans-serif;
+
+  color: var(--main-text-color);
 }
 
 .header {
@@ -33,6 +36,37 @@ body{
 }
 
 .header_links{
-  color: var(--main-text-color);
   font-size: 1.8rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 14rem;
+}
+
+.main_image{
+  width: 15rem;
+  border-radius: 50%;
+}
+
+.main_title{
+  font-size: 6.4rem;
+  font-weight: 700;
+}
+
+.main_title::after{
+  content: "";
+  display: block;
+  width: 14rem;
+  height: 0.5rem;
+  background: var(--alternative-color);
+  margin: 0.8rem auto;
+}
+
+.main_phrase{
+  font-size: 2.4rem;
 }
