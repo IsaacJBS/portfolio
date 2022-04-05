@@ -1,0 +1,38 @@
+html{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+}
+
+a{
+  text-decoration: none;
+}
+
+:root{
+  --background-color: #E5E5E5;
+  --main-text-color: #19535F;
+
+}
+
+body{
+  background-color: var(--background-color);
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 4.3rem 13.5rem;
+}
+
+.header_middle-div a{
+  margin-right: 10rem;
+}
+
+.header_links{
+  color: var(--main-text-color);
+  font-size: 1.8rem;
+}
