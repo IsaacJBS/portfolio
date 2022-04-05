@@ -12,6 +12,7 @@ a{
   --second-background-color: #D8C9AA;
   --main-text-color: #19535F;
   --alternative-color: #7C2D26;
+  --alternative-text-color: #0B7A74;
 }
 
 body{
@@ -27,6 +28,14 @@ body{
   margin: 0;
 
   box-sizing: border-box;
+}
+
+.text-color{
+  color: var(--alternative-text-color);
+}
+
+.alternative-text-color{
+  color: var(--alternative-color);
 }
 
 .header {
@@ -66,7 +75,7 @@ body{
   font-weight: 700;
 }
 
-.main_title::after{
+.document_title::after{
   content: "";
   display: block;
   width: 14rem;
@@ -76,12 +85,10 @@ body{
 }
 
 .main_phrase{
-  font-size: 2.4rem;
-
   margin-bottom: 14rem;
 }
 
-.experience{
+.portfolio-section{
   display: flex;
   flex-direction: column;
 
@@ -90,21 +97,15 @@ body{
   padding: 8.8rem 14rem;
 }
 
-.experience_title::after{
-  content: "";
-  display: block;
-  width: 14rem;
-  height: 0.5rem;
-  background: var(--alternative-color);
-  margin: 0.8rem auto;
-}
-
-.experience_left-section{
+.container_left-section{
   display: flex;
   justify-content: space-between;
+
+  flex-wrap: wrap;
+
 }
 
-.experience_text{
+.document_text{
   max-width: 56rem;
 
   text-align: center;
@@ -141,3 +142,83 @@ body{
 
   font-weight: 700;
 } 
+
+.qualification_section{
+  background-color: var(--background-color);
+}
+
+.qualifications{
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 7.8rem;
+}
+
+.qualification_box{
+  text-align: left;
+  
+  padding-left: 1rem;
+
+  max-width: 20rem;
+  border-left: 0.5rem solid #7C2D26;
+}
+
+.qualification_box p{
+  color: var(--alternative-color);
+  font-weight: 700;
+}
+
+.qualifications_complementary{
+  margin-top: 6.2rem;
+  text-align: left;
+}
+
+.qualifications_complementary span{
+  font-size: 1.4rem;
+}
+
+.qualifications_complementary-info{
+  display: flex;
+  justify-content: space-between;
+
+  color: var(--alternative-color);
+}
+
+.qualifications_complementary-language p{
+  color: var(--alternative-color);
+}
+
+.qualifications_complementary-language span{
+  color: var(--main-text-color);
+  font-size: 1.8rem;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 5.3rem 23rem 10rem;
+
+  background-color: var(--second-background-color);
+}
+
+.footer_section{
+  display: flex;
+}
+
+.footer_section p{
+  max-width: 46rem;
+  margin-right: 24rem;
+}
+
+.footer_contacts{
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 5rem;
+}
+
+.footer_contacts a{
+  margin-bottom: 0.5rem;
+}
