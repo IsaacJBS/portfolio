@@ -1,5 +1,6 @@
 html{
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 a{
@@ -56,6 +57,16 @@ body{
   font-size: 1.8rem;
 }
 
+.header_contact-button{
+  all: unset;
+  cursor: pointer;
+  outline: 1px solid #7C2D26;
+
+  padding: 1rem;
+
+  border-radius: 1rem;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -102,7 +113,6 @@ body{
   justify-content: space-between;
 
   flex-wrap: wrap;
-
 }
 
 .document_text{
@@ -120,13 +130,17 @@ body{
 
 .glider_slide img{
   max-width: 100%;
+
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 } 
 
 .glider_container{
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  text-align: center;
 
   max-width: 40rem;
   margin-right: 12rem;
@@ -149,6 +163,8 @@ body{
 
 .qualifications{
   display: flex;
+
+  flex-wrap: wrap;
   justify-content: space-between;
 
   margin-top: 7.8rem;
@@ -179,6 +195,7 @@ body{
 
 .qualifications_complementary-info{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   color: var(--alternative-color);
@@ -189,7 +206,7 @@ body{
 }
 
 .qualifications_complementary-language span{
-  color: var(--main-text-color);
+  color: var(--alternative-text-color);
   font-size: 1.8rem;
 }
 
@@ -205,20 +222,37 @@ body{
 
 .footer_section{
   display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
 }
 
 .footer_section p{
   max-width: 46rem;
   margin-right: 24rem;
+  margin-bottom: 5rem;
 }
 
 .footer_contacts{
   display: flex;
-  flex-direction: column;
-
-  margin-bottom: 5rem;
+  flex-direction: row;
 }
 
 .footer_contacts a{
   margin-bottom: 0.5rem;
+}
+
+.footer_icons{
+  width: 3.2rem;
+
+  margin-right: 1rem;
+
+  filter: invert(24%) sepia(73%) saturate(536%) hue-rotate(143deg) brightness(83%) contrast(83%);
+}
+
+.footer_icons-git{
+  margin-right: 1rem;
+
+  width: 3.2rem;
 }
