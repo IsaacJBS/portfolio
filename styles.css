@@ -296,6 +296,29 @@ body{
   }
 }
 
+@media (max-width: 682px){
+  .qualifications{
+    flex-direction: column;
+  }
+
+  .qualification_box{
+    margin-bottom: 3rem;
+  }
+
+  .footer{
+    padding: 5.3rem 0rem;
+    justify-content: center;
+  }
+
+  .footer_text{
+    width: 30rem;
+  }
+
+  .footer p{
+    width: 30rem;
+  }
+}
+
 @media (max-width: 549px){
   .main{
     text-align: center;
@@ -313,21 +336,5 @@ body{
   .qualifications{
     flex-direction: column;
   }
-  .qualification_box{
-    margin-bottom: 3rem;
-  }
 
-  .footer{
-    padding: 5.3rem 0rem;
-    justify-content: center;
-  }
-
-  .footer_text{
-    width: 30rem;
-  }
-
-  .footer p{
-    width: 30rem;
-
-  }
 }
