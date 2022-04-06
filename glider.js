@@ -8,13 +8,4 @@ new Glider(carousel, {
     prev: '.carousel-prev',
     next: '.carousel-next'
   },
-  responsive: [
-    {
-      breakpoint: 682,
-      settings: {
-        slidesToShow: 1.5,
-        slidesToScroll: 1,
-      },
-    },
-  ]
 })
