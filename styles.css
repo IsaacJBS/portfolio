@@ -296,13 +296,18 @@ body{
   }
 }
 
-@media (max-width: 414px){
+@media (max-width: 415px){
   .main{
     text-align: center;
   }
 
   .portfolio-section{
-    padding: 3rem 3rem;
+    padding: 3rem 0rem;
+  }
+
+  .document_text{
+    width: 30rem;
+
   }
 
   .qualifications{
@@ -310,5 +315,19 @@ body{
   }
   .qualification_box{
     margin-bottom: 3rem;
+  }
+
+  .footer{
+    padding: 5.3rem 0rem;
+    justify-content: center;
+  }
+
+  .footer_text{
+    width: 30rem;
+  }
+
+  .footer p{
+    width: 30rem;
+
   }
 }
