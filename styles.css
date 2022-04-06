@@ -255,11 +255,14 @@ body{
 @media (max-width: 768px){
   .header{
     flex-direction: column;
+    justify-content: center;
   }
 
   .header_middle-div{
     margin-top: 1rem;
     margin-bottom: 1rem;
+
+    text-align: center;
   }
 
   .header_middle-div a{
@@ -290,5 +293,22 @@ body{
 
   .footer_section p{
     margin-right: 0;
+  }
+}
+
+@media (max-width: 414px){
+  .main{
+    text-align: center;
+  }
+
+  .portfolio-section{
+    padding: 3rem 3rem;
+  }
+
+  .qualifications{
+    flex-direction: column;
+  }
+  .qualification_box{
+    margin-bottom: 3rem;
   }
 }
