@@ -78,13 +78,26 @@ body {
   font-weight: 700;
 }
 
-.document_title::after {
+.main_title::after {
   content: "";
   display: block;
   width: 14rem;
   height: 0.5rem;
   background: var(--alternative-color);
   margin: 0.2rem auto;
+}
+
+.document_title {
+  font-size: 4.8rem;
+}
+
+.document_title::after {
+  content: "";
+  display: block;
+  width: 14rem;
+  height: 0.5rem;
+  background: var(--alternative-color);
+  margin-top: -3rem;
 }
 
 .profession {
@@ -104,7 +117,11 @@ body {
 
 .portfolio-section {
   display: flex;
-  flex-direction: column;
+
+  margin-left: 13.5rem;
+
+  border-top-left-radius: 4rem;
+  border-bottom-left-radius: 4rem;
 
   background-color: var(--second-background-color);
 
@@ -112,21 +129,20 @@ body {
 }
 
 .container_left-section {
-  display: flex;
-  justify-content: space-between;
 }
 
 .document_text {
-  max-width: 56rem;
-
-  text-align: center;
+  max-width: 42rem;
 }
 
 .experience_carousel {
   display: flex;
+  max-width: 60%;
   justify-content: space-around;
   align-items: center;
   margin-top: 6rem;
+
+  margin-left: 7rem;
 }
 
 .glider_slide img {
