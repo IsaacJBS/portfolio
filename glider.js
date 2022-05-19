@@ -3,17 +3,14 @@ const numberOfSlides = 9;
 
 new Glider(carousel, {
   slidesToScroll: numberOfSlides,
-  slidesToShow: 1.5,
+  slidesToShow: 1.1,
   draggable: true,
-  // arrows: {
-  //   prev: ".carousel-prev",
-  //   next: ".carousel-next",
-  // },
+  dragVelocity: 10,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 950,
       settings: {
-        slidesToShow: 0.5,
+        slidesToShow: 1,
         slidesToScroll: numberOfSlides,
         itemWidth: 200,
       },

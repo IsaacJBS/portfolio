@@ -161,7 +161,7 @@ body {
   text-align: center;
 
   max-width: 40rem;
-  margin-right: 8rem;
+  margin-right: 4rem;
 
   background-color: var(--background-color);
 
@@ -288,23 +288,17 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin: 4.3rem 13.5rem;
-  }
   .qualification_left-section {
     flex-direction: column;
   }
 
   .qualification_left-section .document_text {
-    margin-left: 7rem;
+    margin-left: 0;
   }
 
   .portfolio-section {
     flex-direction: column;
+
     margin-left: 0;
   }
 
@@ -386,6 +380,14 @@ body {
     text-align: center;
   }
 
+  .document_title {
+    font-size: 3.8rem;
+  }
+
+  .qualification_section {
+    padding: 8.8rem 5rem;
+  }
+
   .portfolio-section {
     padding: 3rem 2rem;
   }
@@ -396,5 +398,9 @@ body {
 
   .qualifications {
     flex-direction: column;
+  }
+
+  .glider_container {
+    margin-right: 3rem;
   }
 }
