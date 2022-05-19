@@ -287,6 +287,25 @@ body {
   width: 3.2rem;
 }
 
+@media (max-width: 1024px) {
+  .qualification_left-section {
+    flex-direction: column;
+  }
+
+  .qualification_left-section .document_text {
+    margin-left: 7rem;
+  }
+
+  .portfolio-section {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .experience_carousel {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 950px) {
   .header {
     flex-direction: column;
