@@ -288,6 +288,13 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 4.3rem 13.5rem;
+  }
   .qualification_left-section {
     flex-direction: column;
   }
@@ -303,6 +310,7 @@ body {
 
   .experience_carousel {
     max-width: 100%;
+    margin-left: 0;
   }
 }
 
