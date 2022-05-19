@@ -175,7 +175,21 @@ body {
 }
 
 .qualification_section {
-  background-color: var(--background-color);
+  padding: 8.8rem 14rem;
+}
+
+.qualification_left-section {
+  display: flex;
+
+  text-align: start;
+}
+
+.qualification_left-section .document_text {
+  margin-top: 5rem;
+
+  margin-left: 22rem;
+
+  max-width: 50rem;
 }
 
 .qualifications {
@@ -223,6 +237,10 @@ body {
 .qualifications_complementary-language span {
   color: var(--alternative-text-color);
   font-size: 1.8rem;
+}
+
+.qualifications_text {
+  margin-top: 6.2rem;
 }
 
 .footer {
