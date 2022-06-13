@@ -13,7 +13,7 @@ new Glider(carousel, {
         slidesToShow: 1,
         slidesToScroll: numberOfSlides,
         itemWidth: 200,
-        dragVelocity: 4,
+        dragVelocity: 1.5,
       },
     },
   ],
