@@ -281,6 +281,15 @@ body {
     brightness(83%) contrast(83%);
 }
 
+.footer_icons-dev {
+  width: 3.2rem;
+
+  margin-right: 1rem;
+
+  filter: invert(24%) sepia(73%) saturate(536%) hue-rotate(143deg)
+    brightness(83%) contrast(83%);
+}
+
 .footer_icons-git {
   margin-right: 1rem;
 
